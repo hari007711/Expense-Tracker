@@ -1,8 +1,13 @@
+
 {
+  "name": "json-backend",
+  "version": "1.0.0",
+  "main": "api/index.js",
   "scripts": {
-    "server": "json-server --watch db.json --port 3001"
+    "start": "node api/index.js"
   },
   "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+    "json-server": "^0.17.3"
   }
 }
+
