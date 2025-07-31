@@ -1,8 +1,7 @@
-import React, { useMemo, useState, useEffect } from "react";
+import  { useMemo, useState, useEffect } from "react";
 import { MaterialReactTable, type MRT_ColumnDef } from "material-react-table";
 import { useExpenseStore } from "@/store/expenseStore";
 import {
-  Pencil,
   SquarePen,
   Trash2,
   ChevronDownIcon,
@@ -21,7 +20,6 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -52,7 +50,6 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-  AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 
 type Expense = {

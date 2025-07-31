@@ -2,7 +2,6 @@ import image from "../assets/usr.jfif";
 import {
   LayoutDashboard,
   BanknoteArrowDown,
-  BanknoteArrowUp,
 } from "lucide-react";
 import { Link, useLocation } from "@tanstack/react-router";
 

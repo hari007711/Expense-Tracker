@@ -1,12 +1,9 @@
 import { useExpenseStore } from "@/store/expenseStore";
 import { TrendingDown, TrendingUp } from "lucide-react";
-import React, { useMemo } from "react";
+import  { useMemo } from "react";
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -21,7 +18,6 @@ import {
   Legend, 
 } from "recharts";
 
-import type { Expense } from "@/types/expense";
 
 const ExpensesDash = () => {
   const { expenses } = useExpenseStore();

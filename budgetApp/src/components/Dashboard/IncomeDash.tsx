@@ -1,12 +1,8 @@
 import { useExpenseStore } from "@/store/expenseStore";
 import { TrendingDown, TrendingUp } from "lucide-react";
-import React from "react";
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";

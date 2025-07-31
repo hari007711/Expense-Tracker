@@ -10,9 +10,8 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import React, { useMemo } from "react";
+import  { useMemo } from "react";
 
-import type { Expense } from "@/types/expense";
 
 const BarGraph = () => {
   const { expenses } = useExpenseStore();

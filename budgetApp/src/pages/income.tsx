@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 
 export default function Income() {
   return (

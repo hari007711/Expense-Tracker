@@ -1,8 +1,5 @@
-import React, { useEffect, useMemo } from "react";
+import  { useEffect, useMemo } from "react";
 import { useExpenseStore } from "../../store/expenseStore";
-import balance from "../../assets/wallet.png";
-import income from "../../assets/income.png";
-import expense from "../../assets/spending.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import {
@@ -13,8 +10,6 @@ import {
   Legend,
   Tooltip,
 } from "recharts";
-import type { Expense } from "@/types/expense";
-import { Value } from "@radix-ui/react-select";
 import { Link } from "@tanstack/react-router";
 import { Button } from "../ui/button";
 import { ArrowRight, TrendingDown, TrendingUp } from "lucide-react";
@@ -139,7 +134,7 @@ const BudgetCards = () => {
                   dataKey="value"
                   nameKey="name"
                 >
-                  {pieChartData.map((entry, index) => (
+                  {pieChartData.map((_, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}

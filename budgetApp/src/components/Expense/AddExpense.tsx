@@ -42,7 +42,6 @@ export default function AddExpense() {
   const { add, fetchExpenses } = useExpenseStore();
   const [open, setOpen] = useState(false);
   const [openDate, setOpenDate] = useState(false);
-  const [date, setDate] = useState<string>("");
 
   const {
     register,
@@ -77,14 +76,11 @@ export default function AddExpense() {
     };
     reader.readAsDataURL(file);
   };
-  const [currErrorMsg, setCurrErrorMsg] = useState<string>("");
 
   const onSubmit = async (data: FormValues) => {
-    console.log("jjjjjjjjj");
 
     let check = false;
     if (selectVal == "") {
-      setCurrErrorMsg("Please Select Currency");
       check = true;
     }
     if (!check) {
@@ -141,7 +137,7 @@ export default function AddExpense() {
                   {errors.title && (
                     <p className="text-red-500 text-sm">
                       {errors.title.message}
-                      
+
                     </p>
                   )}
                 </div>

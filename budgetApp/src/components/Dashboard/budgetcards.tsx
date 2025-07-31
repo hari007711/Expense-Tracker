@@ -1,21 +1,16 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import {
   useExpenseStore,
-  useExpenseStoreSettings,
 } from "../../store/expenseStore";
 import balance from "../../assets/wallet.png";
 import income from "../../assets/income.png";
 import expense from "../../assets/spending.png";
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { toast } from "sonner";
 
 const BudgetCards = () => {
   const { expenses, fetchExpenses, loading, error } = useExpenseStore();

@@ -58,7 +58,7 @@ export const useExpenseStoreSettings = create<SettingsExpenseStore>()(
 
 export const useExpenseStore = create<ExpenseStore>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       expenses: [],
       loading: false,
       error: null,

@@ -1,7 +1,6 @@
 import {
   createRootRoute,
   createRoute,
-  lazyRouteComponent,
 } from "@tanstack/react-router";
 import { RootComponent } from "./__root";
 import Dashboard from "../pages/dashboard";

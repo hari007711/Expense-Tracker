@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import { SideMenu } from "./sidemenu";
-import { Settings } from "lucide-react";
+
 import SettingsComp from "@/components/Dashboard/settings";
 
 const Navbar = () => {
-  const [openSideMenu, setOpenSideMenu] = useState(false);
 
   return (
     <div className="flex items-center justify-between bg-white p-[15px] border-b-2 border-[#e5e5e5]">
