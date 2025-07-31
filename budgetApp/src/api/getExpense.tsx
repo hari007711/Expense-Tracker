@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3001/expenses";
+const API_URL = "https://budget-tracker-backend-psi.vercel.app/";
 
 export const getExpenses = async (): Promise<any[]> => {
   const res = await axios.get(API_URL);

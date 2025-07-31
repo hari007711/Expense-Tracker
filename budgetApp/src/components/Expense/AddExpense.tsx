@@ -141,6 +141,7 @@ export default function AddExpense() {
                   {errors.title && (
                     <p className="text-red-500 text-sm">
                       {errors.title.message}
+                      
                     </p>
                   )}
                 </div>
