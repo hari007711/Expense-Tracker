@@ -1,16 +1,10 @@
-{"buildCommand": "npm install && npm run build",
+{
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "vite.config.js",
-      "use": "@vercel/static-build"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
