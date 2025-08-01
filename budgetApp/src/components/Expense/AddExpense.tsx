@@ -130,7 +130,7 @@ export default function AddExpense() {
                 <div className="grid gap-3">
                   <Label>Spent On</Label>
                   <Input
-                    className="w-[12.5vw]"
+                    className="w-40"
                     placeholder="Enter title"
                     {...register("title", { required: "Please Enter Title" })}
                   />
