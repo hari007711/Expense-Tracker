@@ -116,7 +116,7 @@ export default function AddExpense() {
           </DialogTrigger>
         </div>
 
-        <DialogContent className="w-250">
+        <DialogContent className="w-150">
           <form onSubmit={handleSubmit(onSubmit)}>
             <DialogHeader>
               <DialogTitle>Add Expense</DialogTitle>
@@ -145,7 +145,7 @@ export default function AddExpense() {
                   <Label>Amount</Label>
                   <Input
                     type="number"
-                    className="w-[12.5vw]"
+                    className="w-40"
                     placeholder="Enter Amount"
                     {...register("amount", { required: "Please Enter Amount" })}
                   />
