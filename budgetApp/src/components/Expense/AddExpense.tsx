@@ -116,7 +116,7 @@ export default function AddExpense() {
           </DialogTrigger>
         </div>
 
-        <DialogContent className="w-[100vw]">
+        <DialogContent className="w-[30vw]">
           <form onSubmit={handleSubmit(onSubmit)}>
             <DialogHeader>
               <DialogTitle>Add Expense</DialogTitle>
